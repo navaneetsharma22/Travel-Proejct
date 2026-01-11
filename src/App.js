@@ -19,7 +19,9 @@ function App() {
     {/* <h2>Plan With Love</h2> */}
     {/* also place in tours component */}
     <Tours tours={tours} removeTour={removeTour}></Tours>
-    
+    <div>
+      <h1></h1>Plan With Love</h1>
+    </div>
    
     </div>
   );
