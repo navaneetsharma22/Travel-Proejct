@@ -1,18 +1,19 @@
+import Card from "./Card";
 
 function Tours({tours,removeTour}) {
     return(
-        <div>
+        <div className="container">
             
             <div>
-                <h2>Plan With Love</h2>
+                <h2 className="title">Plan With Nav</h2>
             </div>
 
             {/* rather than typing seven diffrent - diffrent card  using map function */}
-            <div>
+            <div className="cards">
 
                     {
                         tours.map((tour) => {
-                            return <card {...tour} removeTour={removeTour}></card>
+                            return <Card {...tour} removeTour={removeTour}></Card>
                         })
                     }
 
