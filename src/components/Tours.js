@@ -5,7 +5,7 @@ function Tours({tours,removeTour}) {
         <div className="container">
             
             <div>
-                <h2 className="title">Plan With Nav</h2>
+                <h2 className="title">Plan With Navneet</h2>
             </div>
 
             {/* rather than typing seven diffrent - diffrent card  using map function */}
