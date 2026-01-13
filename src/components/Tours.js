@@ -1,30 +1,20 @@
 import Card from "./Card";
 
-function Tours({tours,removeTour}) {
-    return(
-        <div className="container">
-            
-            <div>
-                <h2 className="title">Plan With Navneet</h2>
-            </div>
+function Tours({ tours, removeTour }) {
+  return (
+    <div className="container">
+      <div>
+        <h2 className="title">Plan With Navneet & Arman</h2>
+      </div>
 
-            {/* rather than typing seven diffrent - diffrent card  using map function */}
-            <div className="cards">
-
-                    {
-                        tours.map((tour) => {
-                            return <Card key= {tour.id} {...tour} removeTour={removeTour}></Card>
-                        })
-                    }
-
-            </div>
-
-
-
-        </div>
-
-    );
-
+      {/* rather than typing seven diffrent - diffrent card  using map function */}
+      <div className="cards">
+        {tours.map((tour) => {
+          return <Card key={tour.id} {...tour} removeTour={removeTour}></Card>;
+        })}
+      </div>
+    </div>
+  );
 }
 
 export default Tours;
